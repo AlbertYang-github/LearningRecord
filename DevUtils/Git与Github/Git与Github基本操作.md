@@ -87,5 +87,6 @@ git push [remote_name] [branch_name]
 注：git push [远程仓库名] [需要被推送的本地分支名]
 ```
 **参考资料**：
-> [Git官方文档](https://git-scm.com/docs)
+> [Git官方文档](https://git-scm.com/docs)  
+> 
 > [Pro Git](http://iissnan.com/progit/)
