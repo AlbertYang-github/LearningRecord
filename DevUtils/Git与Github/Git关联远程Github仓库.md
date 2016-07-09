@@ -1,4 +1,4 @@
- ##Git关联远程Github仓库
+##Git关联远程Github仓库
 ####1.配置Git,设置用户信息
 ```
 git config --global user.name "jack"
