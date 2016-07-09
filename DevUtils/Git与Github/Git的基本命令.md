@@ -1,5 +1,4 @@
-#Git与Github基本操作
-###Git的基本命令
+##Git的基本命令
 * 初始化新的本地仓库
 ```
 git init
