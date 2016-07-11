@@ -8,3 +8,7 @@
 
 ###数据结构与算法(Java语言实现算法)
 * [顺序表](https://github.com/AlbertYang-github/DataStructure/tree/master/src/seqlist)
+* [排序]()
+ * [冒泡排序](https://github.com/AlbertYang-github/DataStructure/blob/master/src/sort/BubbleSort.java)
+ * [直接选择排序](https://github.com/AlbertYang-github/DataStructure/blob/master/src/sort/StraightSelectionSort.java)
+ * [直接插入排序](https://github.com/AlbertYang-github/DataStructure/blob/master/src/sort/StraightInsertionSort.java)
