@@ -7,8 +7,15 @@
  * [使用Git与Github多人协同开发流程](https://github.com/AlbertYang-github/LearningRecord/blob/master/DevUtils/Git%E4%B8%8EGithub/%E4%BD%BF%E7%94%A8Git%E4%B8%8EGithub%E5%A4%9A%E4%BA%BA%E5%8D%8F%E5%90%8C%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B.md)
 
 ###数据结构与算法(Java语言实现算法)
-* [顺序表](https://github.com/AlbertYang-github/DataStructure/tree/master/src/seqlist)
-* [排序](https://github.com/AlbertYang-github/DataStructure/blob/master/src/sort/%E6%8E%92%E5%BA%8F.md)
- * [冒泡排序](https://github.com/AlbertYang-github/DataStructure/blob/master/src/sort/BubbleSort.java)
- * [直接选择排序](https://github.com/AlbertYang-github/DataStructure/blob/master/src/sort/StraightSelectionSort.java)
- * [直接插入排序](https://github.com/AlbertYang-github/DataStructure/blob/master/src/sort/StraightInsertionSort.java)
+* 线性表
+ * [顺序表]()
+* 排序
+ * [冒泡排序]()
+ * [直接选择排序]()
+ * [直接插入排序]()
+* 栈和队列
+ * [顺序栈]()
+ * [顺序队列]()
+
+###数据库
+* [SQL语句]()
