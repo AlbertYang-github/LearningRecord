@@ -87,9 +87,9 @@ delete from [table_name] (where 字段=值);
 ```
 例如：
 ```
-//删除表中名称为"张三"的记录。
+//删除表中名称为"张三"的记录
 delete from user where username="张三";
-删除表中所有记录。
+//删除表中所有记录
 delete from user;
 ```
 * 查询数据
