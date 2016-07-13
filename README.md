@@ -18,4 +18,4 @@
  * [顺序队列]()
 
 ###数据库
-* [SQL语句]()
+* [SQL语句](https://github.com/AlbertYang-github/LearningRecord/blob/master/Database/SQL%E8%AF%AD%E5%8F%A5.md)
