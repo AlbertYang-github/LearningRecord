@@ -100,4 +100,32 @@ select * from [table_name];
 select 字段1,字段2,字段3 from [table_name];
 //含有where子句的查询
 select * from [table_name] where 字段=值;
+//使用order by对查询结果进行排序(升序 ——> asc, 降序 ——> desc)
+select * from [table_name] order by 字段 [asc/desc]
+注意：其中字段可以是多个运算，比如 字段1 + 字段2
+```
+
+* 聚合函数
+ * count 获取数量
+```
+select count(*) from [table_name] (where子句);
+```
+ * sum 求和
+```
+select sum(字段 + 字段 + ...) from [table_name] (where子句);
+select sum(字段) + sum(字段) + ... from [table_name] (where子句);
+```
+注意：如果某个字段中含有null，应该使用第二种写法，因为第一种写法是以元组为单位求和的，如果某个元组中含有null，就会忽略该条记录，但是可以写为:
+select sum(ifnull(字段,0) + ifnull(字段,0) + ...) from [table_name] (where子句);
+ * avg 平均数
+```
+select avg(字段) from [table_name];
+```
+ * max 最大值
+```
+select max(字段) from [table_name];
+```
+ * min 最小值
+```
+select min(字段) from [table_name];
 ```
