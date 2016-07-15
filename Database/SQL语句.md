@@ -66,9 +66,9 @@ alter table [table_name] modify 旧字段名 新字段名 类型(长度) 约束;
 ###数据CURD
 * 添加数据
 ```
-insert into [table_name] (字段1,字段2,···) value (值1,值2,···);
+insert into [table_name] (字段1,字段2,···) values (值1,值2,···);
 //每个字段都添加数据 (可以不用写字段名)
-insert into [table_name] value (值1,值2,···);
+insert into [table_name] values (值1,值2,···);
 ```
 * 修改数据
 ```
