@@ -7,4 +7,4 @@ http://repo1.maven.org/maven2/archetype-catalog.xml 文件约为3-4M，下载速
 
 * 解决方法
 在下面界面添加一个属性 archetypeCatalog = internal
-![](http://i.imgur.com/EDTCD2X.png)
+![](http://i.imgur.com/ljaZYJm.png)
