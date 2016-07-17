@@ -28,7 +28,7 @@ applicationContext.xml文件中的bean标签就对应一个JavaBean对象，其�
 
 * **创建一个测试类**<br/>
 ![](http://i.imgur.com/YILCKvM.png)<br/>
-ClassPathXmlApplicationContext("applicationContext.xml的路径")
+ClassPathXmlApplicationContext("applicationContext.xml的路径")<br/>
 getBean("applicationContext.xml文件中bean标签的id")
 
 
