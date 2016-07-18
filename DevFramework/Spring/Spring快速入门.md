@@ -3,9 +3,9 @@
  * Spring Jar包
 [http://repo.springsource.org/libs-release-local/](http://repo.springsource.org/libs-release-local/)
  * commons-logging （日志）
-[https://commons.apache.org/proper/commons-logging/download_logging.cgi](https://commons.apache.org/proper/commons-logging/download_logging.cgi)
+[http://ebr.springsource.com/repository/app/bundle/version/detail?name=com.springsource.org.apache.commons.logging&version=1.1.1](http://ebr.springsource.com/repository/app/bundle/version/detail?name=com.springsource.org.apache.commons.logging&version=1.1.1)
  * apache-log4j （日志）
-[http://logging.apache.org/log4j/2.x/download.html](http://logging.apache.org/log4j/2.x/download.html)
+[http://ebr.springsource.com/repository/app/bundle/version/detail?name=com.springsource.org.apache.log4j&version=1.2.16](http://ebr.springsource.com/repository/app/bundle/version/detail?name=com.springsource.org.apache.log4j&version=1.2.16)
  * Junit（用于单元测试）
 [http://junit.org/junit4/](http://junit.org/junit4/)
 
