@@ -11,7 +11,7 @@
 
 * **将下载下来的Jar包导入项目中**<br/>
 导入结果如下图：<br/>
-![](http://i.imgur.com/IfyOPgr.png)
+![](http://i.imgur.com/86u9aDV.png)
 
 再在src目录下添加如下文件（log4j属性文件）<br/>
 ![](http://i.imgur.com/DAVDfb1.png)
@@ -24,7 +24,7 @@
 ![](http://i.imgur.com/iSiGCdg.png)<br/>
 首先应该从spring-framework-4.0.0.RELEASE\docs\spring-framework-reference\html中找到xsd-config.html找到其中的beans表标签并复制（主要是用到它的约束）
 ![](http://i.imgur.com/KBoXyTf.png)<br/>
-applicationContext.xml文件中的bean标签就对应一个JavaBean对象，其中包含属性标签
+applicationContext.xml文件中的bean标签就对应一个JavaBean对象，其中包含属性标签；当Spring框架加载时，会自动创建一个Bean对象（反射）。
 
 * **创建一个测试类**<br/>
 ![](http://i.imgur.com/YILCKvM.png)<br/>
