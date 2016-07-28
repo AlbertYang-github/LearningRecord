@@ -129,3 +129,17 @@ select sum(ifnull(字段,0) + ifnull(字段,0) + ...) from [table_name] (where�
  ```
  select min(字段) from [table_name];
  ```
+
+* 查询语句之like
+```
+select * from 表名 where 字段名 like 对应值（子串）
+```
+子串写法：
+%： 包含零个或多个字符的任意字符串
+_（下划线）： 任何单个字符
+
+* 分页查询
+```
+select * from [表名] limit [起始行] [需要查询的行数];
+```
+注意：起始行为0代表第一行
