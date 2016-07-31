@@ -4,6 +4,13 @@
 * Spring
  * [Spring快速入门](https://github.com/AlbertYang-github/LearningRecord/blob/master/DevFramework/Spring/Spring%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md)
 
+##DevRelated（开发相关内容）
+* XML
+ * [DTD约束]()
+
+##DataBase（数据库）
+* [SQL语句](https://github.com/AlbertYang-github/LearningRecord/blob/master/Database/SQL%E8%AF%AD%E5%8F%A5.md)
+
 ##DevUtils（开发工具的使用）
 * Git与Github
  * [Git的基本命令](https://github.com/AlbertYang-github/LearningRecord/blob/master/DevUtils/Git%E4%B8%8EGithub/Git%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4.md)
@@ -15,6 +22,3 @@
 <br/>
 * Maven
  * [Maven基础内容](https://github.com/AlbertYang-github/LearningRecord/blob/master/DevUtils/Maven/Maven%E5%9F%BA%E7%A1%80%E5%86%85%E5%AE%B9.md)
-
-##数据库
-* [SQL语句](https://github.com/AlbertYang-github/LearningRecord/blob/master/Database/SQL%E8%AF%AD%E5%8F%A5.md)
