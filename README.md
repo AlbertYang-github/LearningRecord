@@ -1,7 +1,7 @@
 #LearningRecord
 ---
 ##DataBase（数据库）
-* [MySQL基础]()
+* [MySQL基础](https://github.com/AlbertYang-github/LearningRecord/blob/master/Database/MySQL%E5%9F%BA%E7%A1%80.md)
 
 ##DevFramework（开发框架）
 * Spring

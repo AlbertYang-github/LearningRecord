@@ -6,10 +6,10 @@
 show databases;
 ```
 MySQL中自带的几个数据库：
-> information_schema： 元数据，基础数据
-> mysql： 数据库配置，包含用户信息(用户名和密码，权限管理)
-> performance_schema： 数据库软件的运行数据，日志信息，性能数据
-> test： 测试数据库(空的)
+> information_schema： 元数据，基础数据<br/>
+> mysql： 数据库配置，包含用户信息(用户名和密码，权限管理)<br/>
+> performance_schema： 数据库软件的运行数据，日志信息，性能数据<br/>
+> test： 测试数据库(空的)<br/>
 
 - 创建数据库
 ```
@@ -137,10 +137,10 @@ select distinct [字段] from [表名];
 ```
 select * from [表名] where (条件);
 ```
-> 逻辑条件： and(与) or(或)
-> 比较条件： > < >= <= <>(不等于) between and(等价于>=且<=)
-> 判空条件： where = is null;
-> 判断空字符串： where [字段] = '';
+> 逻辑条件： and(与) or(或)<br/>
+> 比较条件： > < >= <= <>(不等于) between and(等价于>=且<=)<br/>
+> 判空条件： where = is null;<br/>
+> 判断空字符串： where [字段] = '';<br/>
 - 模糊调节 (like)
 %： 代表任意个字符(包括零个)
 _： 代表一个字符
@@ -177,7 +177,7 @@ select * from [表名] limit [起始行] [需要查询的行数];
 注意：起始行为0代表第一行
 
 - 查询排序
-语法：order by [字段] asc/desc
-asc： 顺序（数值递增，字母a-z）
-desc： 倒序（数值递减，字母z-a）
-默认情况是按照插入顺序排序 
+语法：order by [字段] asc/desc<br/>
+asc： 顺序（数值递增，字母a-z）<br/>
+desc： 倒序（数值递减，字母z-a）<br/>
+默认情况是按照插入顺序排序<br/>
