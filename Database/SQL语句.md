@@ -40,7 +40,7 @@ create table [table_name](
  * 主键约束(primary key, 自增的话后面加上auto_increment)
  * 唯一约束(unique)
  * 非空约束(not null)
-* 查看表的信息
+* 查看表结构
 ```
 desc [table_name];
 ```
