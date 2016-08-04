@@ -176,7 +176,7 @@ select * from [表名] limit [起始行] [需要查询的行数];
 ```
 注意：起始行为0代表第一行
 
-- 查询排序
+- 查询排序 <br/>
 语法：order by [字段] asc/desc<br/>
 asc： 顺序（数值递增，字母a-z）<br/>
 desc： 倒序（数值递减，字母z-a）<br/>
