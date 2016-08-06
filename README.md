@@ -1,13 +1,12 @@
 #LearningRecord
 ---
 ##Java
-* [JDBC基础](https://github.com/AlbertYang-github/LearningRecord/blob/master/Database/MySQL%E5%9F%BA%E7%A1%80.md)
-* [JDBC加强](https://github.com/AlbertYang-github/LearningRecord/blob/master/Database/MySQL%E5%8A%A0%E5%BC%BA.md)
-* [关于MySQL数据库中max_allowed_packet的问题](https://github.com/AlbertYang-github/LearningRecord/blob/master/Database/%E5%85%B3%E4%BA%8EMySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%ADmax_allowed_packet%E7%9A%84%E9%97%AE%E9%A2%98.md)
+* [JDBC基础](https://github.com/AlbertYang-github/LearningRecord/blob/master/Java/JDBC%E5%9F%BA%E7%A1%80.md)
 
 ##DataBase（数据库）
 * [MySQL基础](https://github.com/AlbertYang-github/LearningRecord/blob/master/Database/MySQL%E5%9F%BA%E7%A1%80.md)
 * [MySQL加强](https://github.com/AlbertYang-github/LearningRecord/blob/master/Database/MySQL%E5%8A%A0%E5%BC%BA.md)
+* [关于MySQL数据库中max_allowed_packet的问题](https://github.com/AlbertYang-github/LearningRecord/blob/master/Database/%E5%85%B3%E4%BA%8EMySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%ADmax_allowed_packet%E7%9A%84%E9%97%AE%E9%A2%98.md)
 
 ##DevFramework（开发框架）
 * Spring
