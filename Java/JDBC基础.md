@@ -29,9 +29,9 @@ MySQL的URL格式：jdbc:mysql://hostname：port/databaseName （端口号默认
 ```
 DriverManager.getConnection();
 ```
-> getConnection(String url)
-> getConnection(String url, Properties info)
-> getConnection(String url, String user, String password)
+> getConnection(String url) <br/>
+> getConnection(String url, Properties info) <br/>
+> getConnection(String url, String user, String password) <br/>
 
 ### 示例代码
 ```
