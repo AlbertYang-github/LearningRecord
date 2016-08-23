@@ -10,8 +10,8 @@
 > float 32 bits <br/>
 > double 64 bits <br/>
 
-** 整数默认类型：int **
-** 小数默认类型：double **
+**整数默认类型：int**
+**小数默认类型：double**
 
 ### 类型转换
 * 将浮点数转换为整型时，截取小数点之间的值，并非四舍五入；可以使用java.lang.Math中的round()方法进行四舍五入

@@ -1,8 +1,8 @@
 #LearningRecord
 ---
 ##Java
-* [JavaSE基础]()
-* [JDBC](https://github.com/AlbertYang-github/LearningRecord/blob/master/Java/JDBC%E5%9F%BA%E7%A1%80.md)
+* [JavaSE基础](https://github.com/AlbertYang-github/LearningRecord/blob/master/Java/JavaSE%E5%9F%BA%E7%A1%80.md)
+* [JDBC](https://github.com/AlbertYang-github/LearningRecord/blob/master/Java/JDBC.md)
 
 ##DataBase（数据库）
 * [MySQL基础](https://github.com/AlbertYang-github/LearningRecord/blob/master/Database/MySQL%E5%9F%BA%E7%A1%80.md)
