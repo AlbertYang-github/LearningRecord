@@ -10,7 +10,7 @@
 > float 32 bits <br/>
 > double 64 bits <br/>
 
-**整数默认类型：int**
+**整数默认类型：int** <br/>
 **小数默认类型：double**
 
 ### 类型转换
