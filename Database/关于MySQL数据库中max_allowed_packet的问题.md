@@ -1,7 +1,7 @@
 ## 关于MySQL数据库中max_allowed_packet的问题
 
 ### max_allowed_packet是什么？
-max_allowed_packet是指MySQL服务器端和客户端传送单个数据包允许的大小(网络数据传输是一个包一个包的传输)。
+max_allowed_packet是指MySQL服务器端和客户端传送单个数据包允许的大小，这个数字至少应该大于客户程序将要处理的最大BLOB块的长度(网络数据传输是一个包一个包的传输)。
 
 - 查看MySQL默认max_allowed_packet的大小
 ```
