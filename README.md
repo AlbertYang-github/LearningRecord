@@ -5,7 +5,7 @@
  * [JavaSE基础](https://github.com/AlbertYang-github/LearningRecord/blob/master/Java/BasicKnowledge/JavaSE%E5%9F%BA%E7%A1%80.md)
  * [RegEx](https://github.com/AlbertYang-github/LearningRecord/blob/master/Java/BasicKnowledge/RegEx.md)
  * [JDBC](https://github.com/AlbertYang-github/LearningRecord/blob/master/Java/BasicKnowledge/JDBC.md)
- * [Java集合框架](https://github.com/AlbertYang-github/LearningRecord/blob/master/Java/BasicKnowledge/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6.md)
+ * [Java集合框架](https://github.com/AlbertYang-github/LearningRecord/blob/master/Java/JavaBase/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6.md)
 * JavaCore 
 
 ##ProfessionalTheory（专业理论）
