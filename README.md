@@ -6,7 +6,7 @@
  * [RegEx](https://github.com/AlbertYang-github/LearningRecord/blob/master/Java/JavaBase/RegEx.md)
  * [JDBC](https://github.com/AlbertYang-github/LearningRecord/blob/master/Java/JavaBase/JDBC.md)
 * JavaCore 
- * [Java集合框架](https://github.com/AlbertYang-github/LearningRecord/blob/master/Java/JavaBase/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6.md)
+ * [Java集合框架](https://github.com/AlbertYang-github/LearningRecord/blob/master/Java/JavaCore/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6.md)
  * [Java I/O体系](https://github.com/AlbertYang-github/LearningRecord/blob/master/Java/JavaCore/JavaIO%E4%BD%93%E7%B3%BB.md)
 
 ##ProfessionalTheory（专业理论）
