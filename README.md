@@ -11,7 +11,6 @@
  * [Java网络部分](https://github.com/AlbertYang-github/LearningRecord/blob/master/Java/JavaCore/Java%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B.md)
 
 ## ProfessionalTheory（专业理论）
-* NetWork
 
 ## Database（数据库）
 * MySQL
