@@ -51,3 +51,6 @@ InputStream的作用是用来表示那些从不同数据源产生输入的类。
 - **ObjectInputStream/ObjectOutputStream** <br/>
 对象与流之间的读写，只能将支持java.io.Serializable接口的对象写入流中。
 
+#### Reader和Writer类型
+可以直接对字符进行操作
+
