@@ -22,7 +22,7 @@
  * [Spring快速入门](https://github.com/AlbertYang-github/LearningRecord/blob/master/DevFramework/Spring/Spring%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md)
 
 ## Linux（CentOS）
-* [系统分区]()
+* [系统分区](https://github.com/AlbertYang-github/LearningRecord/blob/master/Linux/%E7%B3%BB%E7%BB%9F%E5%88%86%E5%8C%BA.md)
 
 ## ProfessionalTheory
 
