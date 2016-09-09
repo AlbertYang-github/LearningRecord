@@ -9,42 +9,36 @@
 - 执行start()方法的顺序不代表线程启动的顺序
 - 如果直接调用run()方法，则由主线程（main）执行run()方法内的代码
 
+### 停止线程
+在Java中有以下3中方法可以终止正在运行的线程：
+- 使用退出标志，使线程正常退出，也就是当run方法完成后线程终止
+- 使用stop()方法强行终止线程，不推荐使用（已过期）
+- 使用interrupt()方法中断线程
+
+### 判断线程是否是停止状态
+- this.interrupted()：测试当前线程是否已经中断
+- this.isInterrupted()：测试线程是否已经中断
+
+### 暂停线程
+**暂停线程意味着此线程还可以恢复运行（下面两个方法已过时）。**
+- 使用suspend()方法暂停线程
+- 使用resume()方法恢复线程的执行
+
 ## 线程常用的方法
-### currentThread()方法
-**currentThread()方法可返回代码正在被哪个线程调用的信息。**
-- this.getName()与Thread.currentThread().getName()
-```
-public class MyTest {
-    public static void main(String[] args) {
-        CountOperate countOperate = new CountOperate();
-        Thread t = new Thread(countOperate);
-        t.setName("A");
-        t.start();
-    }
-}
-class CountOperate extends Thread {
-    public CountOperate() {
-        System.out.println("CountOperate---begin");
-        System.out.println("Thread.currentThread().getName()=" + Thread.currentThread().getName());
-        System.out.println("this.getName()=" + this.getName());
-        System.out.println("CountOperate---end");
-    }
-    @Override
-    public void run() {
-        System.out.println("run---begin");
-        System.out.println("Thread.currentThread().getName()=" + Thread.currentThread().getName());
-        System.out.println("this.getName()=" + this.getName());
-        System.out.println("run---end");
-    }
-}
-执行结果：
-CountOperate---begin
-Thread.currentThread().getName()=main
-this.getName()=Thread-0
-CountOperate---end
-run---begin
-Thread.currentThread().getName()=A
-this.getName()=Thread-0
-run---end
-```
-为什么上面程序的两个this.getName()结果都是Thread-0呢？ <br/>
+- **currentThread()** <br/>
+currentThread()方法可返回代码正在被哪个线程调用的信息。
+
+- **isAlive()** <br/>
+测试线程是否处于活动状态；活动状态就是线程已经启动且尚未终止；线程处于正在运行或准备开始运行的状态，就认为线程是"存活"的。
+
+- **getId()** <br/>
+获取线程的唯一标识。
+
+- **yield()** <br/>
+yield()方法的作用是放弃当前的CPU资源，将它让给其它的任务去占用CPU执行时间；但放弃的时间不确定，有可能刚刚放弃，马上又获得CPU时间片。
+
+- **setPriority()** <br/>
+设置线程的优先级。**优先级具有继承特性，比如A线程启动B线程，则B线程的优先级与A是一样的。**
+
+## 问题
+- this和Thread.currentThread()的差异
