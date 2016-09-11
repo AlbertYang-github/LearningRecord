@@ -16,7 +16,7 @@
 - 使用interrupt()方法中断线程
 
 ### 判断线程是否是停止状态
-- this.interrupted()：测试当前线程是否已经中断
+- this.interrupted()：测试当前线程是否已经中断（调用时会清除中断状态）
 - this.isInterrupted()：测试线程是否已经中断
 
 ### 暂停线程
