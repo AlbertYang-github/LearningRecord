@@ -36,6 +36,45 @@ Buffer的固定大小。
 在写模式下，Buffer的limit表示你最多能往Buffer里写多少数据。<br/>
 在读模式下，limit表示最多能读到多少数据。
 
+## Scatter/Gather
+- **Scatter（分散）从Channel中读取是指在读操作时将读取的数据写入多个Buffer中。**
+- **Gather（聚集）写入Channel是指在写操作时将多个Buffer的数据写入同一个Channel。**
+```
+public class StreamTest {
+    public static void main(String[] args) throws IOException {
+        ByteBuffer header = ByteBuffer.allocate(6);
+        ByteBuffer body = ByteBuffer.allocate(4);
+        ByteBuffer[] buffers = {header, body};
+        header.put("header".getBytes());
+        body.put("body".getBytes());
+        RandomAccessFile file = new RandomAccessFile(new File("F:/test.txt"), "rw");
+        FileChannel channel = file.getChannel();
+        header.flip();
+        body.flip();
+        channel.write(buffers);
+    }
+}
+```
+
+## 通道之间的数据传输
+如果两个通道中有一个是FileChannel，可以直接将数据从一个Channel传输到另一个Channel。
+
+- **transferFrom()** <br/>
+将数据从源通道传输到FileChannel中。
+```
+public class StreamTest {
+    public static void main(String[] args) throws IOException {
+        RandomAccessFile fromFile = new RandomAccessFile("F:/from.txt", "rw");
+        FileChannel fromChannel = fromFile.getChannel();
+        RandomAccessFile toFile = new RandomAccessFile("F:/to.txt", "rw");
+        FileChannel toChannel = toFile.getChannel();
+        toChannel.transferFrom(fromChannel, 0, fromChannel.size());
+    }
+}
+```
+
+- **** <br/>
+
 ## 示例代码
 读取磁盘文件
 ```
