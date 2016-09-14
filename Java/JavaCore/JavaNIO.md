@@ -56,6 +56,13 @@ public class StreamTest {
 }
 ```
 
+## FileChannel
+**连接文件的通道，无法设置为非阻塞模式，总是运行在阻塞模式下。**
+- 打开FileChannel <br/>
+需要通过一个InputStream、OutputStream或RandomAccessFile来获取一个FileChannel实例。
+- 将FileChannel中的数据读取到Buffer中。
+- 用完FileChannel必须关闭，channel.close()。
+
 ## 通道之间的数据传输
 如果两个通道中有一个是FileChannel，可以直接将数据从一个Channel传输到另一个Channel。
 
@@ -73,7 +80,19 @@ public class StreamTest {
 }
 ```
 
-- **** <br/>
+- **transferTo()** <br/>
+将数据从FileChannel传输到其他的Channel中。
+```
+public class StreamTest {
+    public static void main(String[] args) throws IOException {
+        RandomAccessFile fromFile = new RandomAccessFile("F:/from.txt", "rw");
+        FileChannel fromChannel = fromFile.getChannel();
+        RandomAccessFile toFile = new RandomAccessFile("F:/to.txt", "rw");
+        FileChannel toChannel = toFile.getChannel();
+        fromChannel.transferTo(0, fromChannel.size(), toChannel);
+    }
+}
+```
 
 ## 示例代码
 读取磁盘文件
