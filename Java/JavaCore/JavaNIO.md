@@ -156,7 +156,6 @@ public class Launcher {
         datagramChannel.send(buf, new InetSocketAddress("127.0.0.1", 20000));
     }
 }
-
 ```
 ## 通道之间的数据传输
 如果两个通道中有一个是FileChannel，可以直接将数据从一个Channel传输到另一个Channel。
