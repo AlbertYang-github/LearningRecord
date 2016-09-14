@@ -145,7 +145,8 @@ public class Launcher {
 }
 ```
 客户端：
-```public class Launcher {
+```
+public class Launcher {
     public static void main(String[] args) throws IOException {
         DatagramChannel datagramChannel = DatagramChannel.open();
         ByteBuffer buf = ByteBuffer.allocate(1024);
