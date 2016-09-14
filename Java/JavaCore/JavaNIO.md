@@ -63,6 +63,106 @@ public class StreamTest {
 - 将FileChannel中的数据读取到Buffer中。
 - 用完FileChannel必须关闭，channel.close()。
 
+## ServerSocketChannel与SocketChannel
+**类似于ServerSocket与Socket，基于TCP。** <br/>
+服务端：
+```
+public class Launcher {
+    public static void main(String args[]) throws IOException {
+        ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
+        serverSocketChannel.socket().bind(new InetSocketAddress(20000));
+        serverSocketChannel.configureBlocking(false);
+        while (true) {
+            SocketChannel socketChannel = serverSocketChannel.accept();
+            if (socketChannel != null) {
+                System.out.println("连接成功");
+                new Thread(new ServerThread(socketChannel)).start();
+            }
+        }
+    }
+}
+class ServerThread implements Runnable {
+
+    private SocketChannel socketChannel;
+
+    public ServerThread(SocketChannel socketChannel) {
+        this.socketChannel = socketChannel;
+    }
+
+    @Override
+    public void run() {
+        ByteBuffer buffer = ByteBuffer.allocate(1024);
+        try {
+            int size = socketChannel.read(buffer);
+			//切换为读模式
+            buffer.flip();
+            while (buffer.hasRemaining()) {
+                System.out.print((char) buffer.get());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                socketChannel.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+```
+
+客户端：
+```
+public class Launcher {
+    public static void main(String[] args) throws IOException {
+        SocketChannel socketChannel = SocketChannel.open(new InetSocketAddress("127.0.0.1", 20000));
+        ByteBuffer buffer = ByteBuffer.allocate(1024);
+        buffer.put("hello".getBytes());
+		//切换为写模式
+        buffer.flip();
+        while (buffer.hasRemaining()) {
+            socketChannel.write(buffer);
+        }
+    }
+}
+```
+
+## DatagramChannel
+**类似于DatagramSocket，基于UDP。** <br/>
+服务端：
+```
+public class Launcher {
+    public static void main(String args[]) throws IOException {
+        DatagramChannel datagramChannel = DatagramChannel.open();
+        datagramChannel.bind(new InetSocketAddress(20000));
+        ByteBuffer buf = ByteBuffer.allocate(1024);
+        buf.clear();
+        datagramChannel.receive(buf);
+        //切换为读模式
+        buf.flip();
+        while (buf.hasRemaining()) {
+            System.out.print((char) buf.get());
+        }
+    }
+}
+```
+
+客户端：
+```public class Launcher {
+    public static void main(String[] args) throws IOException {
+        DatagramChannel datagramChannel = DatagramChannel.open();
+        ByteBuffer buf = ByteBuffer.allocate(1024);
+        buf.clear();
+        buf.put("hello".getBytes());
+        //切换为读模式（需要将buf的数据写入datagramChannel）
+        buf.flip();
+        datagramChannel.send(buf, new InetSocketAddress("127.0.0.1", 20000));
+    }
+}
+
+```
+
 ## 通道之间的数据传输
 如果两个通道中有一个是FileChannel，可以直接将数据从一个Channel传输到另一个Channel。
 
