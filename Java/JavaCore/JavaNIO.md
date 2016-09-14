@@ -55,7 +55,6 @@ public class StreamTest {
     }
 }
 ```
-
 ## FileChannel
 **连接文件的通道，无法设置为非阻塞模式，总是运行在阻塞模式下。**
 - 打开FileChannel <br/>
@@ -111,7 +110,6 @@ class ServerThread implements Runnable {
     }
 }
 ```
-
 客户端：
 ```
 public class Launcher {
@@ -127,7 +125,6 @@ public class Launcher {
     }
 }
 ```
-
 ## DatagramChannel
 **类似于DatagramSocket，基于UDP。** <br/>
 服务端：
@@ -147,7 +144,6 @@ public class Launcher {
     }
 }
 ```
-
 客户端：
 ```public class Launcher {
     public static void main(String[] args) throws IOException {
@@ -162,7 +158,6 @@ public class Launcher {
 }
 
 ```
-
 ## 通道之间的数据传输
 如果两个通道中有一个是FileChannel，可以直接将数据从一个Channel传输到另一个Channel。
 
@@ -179,7 +174,6 @@ public class StreamTest {
     }
 }
 ```
-
 - **transferTo()** <br/>
 将数据从FileChannel传输到其他的Channel中。
 ```
@@ -193,7 +187,6 @@ public class StreamTest {
     }
 }
 ```
-
 ## 示例代码
 读取磁盘文件
 ```
