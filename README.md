@@ -26,7 +26,7 @@
 
 ## Linux（CentOS）
 * [系统分区](https://github.com/AlbertYang-github/LearningRecord/blob/master/Linux/%E7%B3%BB%E7%BB%9F%E5%88%86%E5%8C%BA.md)
-* [Linux常用命令](https://github.com/AlbertYang-github/LearningRecord/blob/master/Linux/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
+* [Linux常用文件操作命令](https://github.com/AlbertYang-github/LearningRecord/blob/master/Linux/Linux%E5%B8%B8%E7%94%A8%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4.md)
 
 ## DevRelated
 * XML
