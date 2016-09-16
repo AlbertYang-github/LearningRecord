@@ -1,4 +1,4 @@
-# 对Linux权限的理解
+# Linux权限管理
 ## 对r w x权限的理解
 ### 对文件而言：
 - r：可以查看文件内容（cat/more/head/tail/less）
